@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd "
+         version="2.5">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/world</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.Servlet1</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletException</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletException</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletException</servlet-name>
+    <url-pattern>/exception</url-pattern>
+  </servlet-mapping>
+
+  <!--<servlet>-->
+    <!--<servlet-name>servletDefault</servlet-name>-->
+    <!--<servlet-class>com.hhg.jerry.servlet.ServletDefault</servlet-class>-->
+  <!--</servlet>-->
+
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>servletDefault</servlet-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <servlet>
+    <servlet-name>servletThread</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletThread</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletThread</servlet-name>
+    <url-pattern>/thread</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletForward</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletForward</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletForward</servlet-name>
+    <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletRedirect</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletRedirect</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletRedirect</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletRequest</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletRequest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletRequest</servlet-name>
+    <url-pattern>/request</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletHead</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletHead</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletHead</servlet-name>
+    <url-pattern>/head</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletLogin</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletLogin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletLogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletCookie</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletCookie</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletCookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletSession</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletSession</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletSession</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+</web-app>
+
