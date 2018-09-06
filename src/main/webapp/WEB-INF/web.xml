@@ -129,5 +129,15 @@
     <servlet-name>servletSession</servlet-name>
     <url-pattern>/session</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servletJsp</servlet-name>
+    <servlet-class>com.hhg.jerry.servlet.ServletJsp</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletJsp</servlet-name>
+    <url-pattern>/jsp</url-pattern>
+  </servlet-mapping>
 </web-app>
 
