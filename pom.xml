@@ -53,7 +53,7 @@
         <version>1.0</version>
         <configuration>
           <path>/servlet</path>
-          <port>9999</port>
+          <port>9998</port>
           <uriEncoding>utf-8</uriEncoding>
         </configuration>
       </plugin>
