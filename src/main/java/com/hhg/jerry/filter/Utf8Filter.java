@@ -14,12 +14,12 @@ public class Utf8Filter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("Utf8Filter doFilter enter");
+        System.out.println("Utf8Filter doFilter enter **********************************");
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
         chain.doFilter(request, response);
-        System.out.println("Utf8Filter doFilter exit");
+        System.out.println("Utf8Filter doFilter exit ####################################");
     }
 
     @Override
